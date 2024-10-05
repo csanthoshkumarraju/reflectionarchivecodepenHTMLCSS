@@ -55,7 +55,7 @@
 
 .menu-list {
     list-style: none;
-    line-height: 35px;
+    line-height: 15px;
     padding: 0;
     margin-top: 10px; 
 }
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    height: 35px;
+    height: 25px;
     color: black;
     font-size:20px;
 }
@@ -105,6 +105,11 @@
 .sidebar:hover {
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* ****************************************************************************************** */
+/* ******************************** Dash board section start ******************************** */
+/* ****************************************************************************************** */
+
 
 .RA-dashboard-section {
     margin-left:110px;
@@ -258,7 +263,7 @@ input[type="checkbox"]:checked + .toggle-label .toggle-slider::before {
     display: flex;
     align-items: center;
     text-decoration: none;
-    height: 35px;
+    height: 25px;
     color: white;
     font-size: 20px;
 }
@@ -345,3 +350,156 @@ input[type="checkbox"]:checked + .toggle-label .toggle-slider::before {
 .dark-theme .dashboard-card:hover .card-text-bad {
     color: white;
 } */
+
+/* Responsive queries */
+
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 60px;
+        transition: width 0.3s;
+    }
+
+    .sidebar:hover {
+        width: 180px;
+    }
+
+    .header {
+        align-items: center;
+        padding: 5px;
+        padding-bottom:19px;
+/*         font-size:15px; */
+    }
+
+    .header-title {
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .theme-toggle {
+        margin-right:4em;
+    }
+
+    .demo-notification {
+        font-size: 0.9em;
+        padding: 3px;
+        margin-top: 60px;
+        margin-left: 5rem;
+        margin-right: 2rem;
+        width:88%;
+        height:auto;
+        border-radius:6px;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    .sidebar:hover .menu-text {
+        display: inline;
+    }
+
+    .menu-list li {
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .header-title {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+  
+    .demo-notification {
+        font-size: 0.8em;
+        padding: 3px;
+        margin-top: 90px;
+        margin-left: 6rem;
+        margin-right: 2rem;
+        width:50%;
+        height:auto;
+        border-radius:6px;
+    }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar:hover {
+        width: 170px;
+    }
+
+    .menu-list li {
+        padding: 8px;
+    }
+
+    .dashboard-card {
+        padding: 10px;
+    }
+
+    .dashboard-section-heading {
+        font-size: 1.3em;
+    }
+
+    .card-heading {
+        font-size: 1.2em;
+    }
+
+    .card-text-todo, .card-text-inp, .card-text-com, .card-text-bad {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-title {
+        font-size: 0.8em;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .demo-notification {
+        font-size: 0.6em;
+        padding: 2px;
+        margin-top: 100px;
+        margin-left: 7rem;
+        margin-right: 2rem;
+        width:40%;
+        height:auto;
+        border-radius:6px;
+    }
+
+    .menu-list li {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+
+    .dashboard-section-heading {
+        font-size: 1.2em;
+    }
+
+    .dashboard-card {
+        padding: 8px;
+    }
+}
+
+
+
+/* ****************************************************************************************** */
+/* ********************************* Dash board section End ********************************* */
+/* ****************************************************************************************** */
