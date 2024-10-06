@@ -16,11 +16,14 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 6px 12px rgba(107, 84, 229, 1);
+
+
 }
 
 .demo-notification {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 65px;
     background-color:#AFAFFF;
     color: #FF5733;
     width: 96%;
