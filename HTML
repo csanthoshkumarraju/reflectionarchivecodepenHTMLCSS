@@ -139,7 +139,7 @@
 <section class="to-do-section" id="todos-section-nav-id">
     <h2 class="to-do-section-heading">To Do</h2>
     
-    <form>
+    <form id="todo-form">
         <input type="text" class="todo-add-input" placeholder="Add a todo task" required>
         <button type="submit" class="todo-add-button">
             <i class="fa-solid fa-plus fa-lg"></i> Add
@@ -147,19 +147,90 @@
     </form>
   
     <div class="todo-progress-urls">
-    <a href="#" class="todo-todos">
-        <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> To Dos
-    </a>
-    <a href="#" class="todo-todos">
-        <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
-    </a>
-    <a href="#" class="todo-todos">
-        <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
-    </a>
-</div>
+        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('todo-section'); return false;">
+            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> To Dos
+        </a>
+        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('in-progress-section'); return false;">
+            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+        </a>
+        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('completed-section'); return false;">
+            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+        </a>
+    </div>
 
-  
+    <div class="todo-section" id="todo-section">
+        <div class="todo-grid" id="todo-grid">
+            <div class="todo-card">Task 1</div>
+            <div class="todo-card">Task 2</div>
+            <div class="todo-card">Task 3</div>
+            <div class="todo-card">Task 4</div>
+            <div class="todo-card">Task 5</div>
+            <div class="todo-card">Task 6</div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="in-progress-section" id="in-progress-section" style="display: none;">
+        <div class="in-progress-grid" id="in-progress-grid">
+            <div class="in-progress-card">Task 7</div>
+            <div class="in-progress-card">Task 8</div>
+            <div class="in-progress-card">Task 9</div>
+            <div class="in-progress-card">Task 10</div>
+            <div class="in-progress-card">Task 11</div>
+            <div class="in-progress-card">Task 12</div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="completed-section" id="completed-section" style="display: none;">
+        <div class="completed-grid" id="completed-grid">
+            <div class="completed-card">Task 13</div>
+            <div class="completed-card">Task 14</div>
+            <div class="completed-card">Task 15</div>
+            <div class="completed-card">Task 16</div>
+            <div class="completed-card">Task 17</div>
+            <div class="completed-card">Task 18</div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
 </section>
+
 
 
 
@@ -178,7 +249,64 @@
 document.getElementById("close-icon").addEventListener("click", function() {
     document.getElementById("notification").style.display = "none";
 });
+  
+function showSection(sectionId) {
+    const sections = ['todo-section', 'in-progress-section', 'completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
 
+  
+let dragged;
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+
+function drag(event) {
+    dragged = event.target;
+}
+
+function drop(event, section) {
+    event.preventDefault();
+    const target = event.target;
+
+    // Check if the drop target is a task card
+    if (target.classList.contains('todo-card') || 
+        target.classList.contains('in-progress-card') || 
+        target.classList.contains('completed-card')) {
+        
+        // Insert dragged item before the target item
+        target.parentNode.insertBefore(dragged, target);
+    } else if (target.classList.contains('todo-grid') || 
+               target.classList.contains('in-progress-grid') || 
+               target.classList.contains('completed-grid')) {
+        
+        // Append the dragged item to the end if dropped on the grid
+        target.appendChild(dragged);
+    }
+}
+
+document.getElementById('todo-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const input = document.querySelector('.todo-add-input');
+    const newTask = document.createElement('div');
+    newTask.className = 'todo-card';
+    newTask.draggable = true;
+    newTask.ondragstart = drag;
+    newTask.textContent = input.value;
+    document.getElementById('todo-grid').appendChild(newTask);
+    input.value = '';
+});
+
+// Adding event listeners for all existing task cards
+document.querySelectorAll('.todo-card, .in-progress-card, .completed-card').forEach(card => {
+    card.ondragstart = drag;
+});
+
+  
   
 </script>
 
