@@ -9,7 +9,9 @@
     <script src="" defer></script> 
 </head>
 <body>
-    
+  
+  <div id="toast"></div>  
+  
    <div class="demo-notification" id="notification">
     <h2>This page is for demonstration purposes. Please register and log in to use the web application. 
         <i class="fa-solid fa-circle-xmark" id="close-icon"></i>
@@ -147,25 +149,26 @@
     </form>
   
     <div class="todo-progress-urls">
-        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('todo-section'); return false;">
-            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> To Dos
-        </a>
-        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('in-progress-section'); return false;">
-            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
-        </a>
-        <a href="#todos-section-nav-id" class="todo-todos" onclick="showSection('completed-section'); return false;">
-            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
-        </a>
-    </div>
+    <a href="#todos-section-nav-id" class="todo-todos" onclick="setActiveLink(this, 'todo-section'); return false;">
+        <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> To Dos
+    </a>
+    <a href="#todos-section-nav-id" class="todo-todos" onclick="setActiveLink(this, 'in-progress-section'); return false;">
+        <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+    </a>
+    <a href="#todos-section-nav-id" class="todo-todos" onclick="setActiveLink(this, 'completed-section'); return false;">
+        <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+    </a>
+</div>
+
 
     <div class="todo-section" id="todo-section">
         <div class="todo-grid" id="todo-grid">
-            <div class="todo-card">Task 1</div>
+            <div class="todo-card">Python is a versatile, high-level programming language known for its simplicity and readability, making it ideal for beginners and experienced developers alike. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. With a rich ecosystem of libraries and frameworks, Python is widely used in web development, data analysis, artificial intelligence, and automation.</div>
             <div class="todo-card">Task 2</div>
             <div class="todo-card">Task 3</div>
             <div class="todo-card">Task 4</div>
             <div class="todo-card">Task 5</div>
-            <div class="todo-card">Task 6</div>
+            <div class="todo-card">Python is a versatile, high-level programming language known for its simplicity and readability, making it ideal for beginners and experienced developers alike. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. With a rich ecosystem of libraries and frameworks, Python is widely used in web development, data analysis, artificial intelligence, and automation.</div>
         </div>
         <div class="pagination">
             <a href="#" class="pagination-button">
@@ -232,9 +235,6 @@
 </section>
 
 
-
-
-
 <!-- ****************************************************************************************** -->
 <!-- ********************************** To Do section End *********************************** -->
 <!-- ****************************************************************************************** -->
@@ -258,56 +258,47 @@ function showSection(sectionId) {
     });
 }
 
-  
-let dragged;
 
-function allowDrop(event) {
-    event.preventDefault();
+let toastShown = false;
+
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.style.display = 'block';
+    toast.style.opacity = '1';
+
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, 500);
+    }, 3000);
 }
 
-function drag(event) {
-    dragged = event.target;
-}
+function updateWidth() {
+    const screenWidth = window.innerWidth;
 
-function drop(event, section) {
-    event.preventDefault();
-    const target = event.target;
-
-    // Check if the drop target is a task card
-    if (target.classList.contains('todo-card') || 
-        target.classList.contains('in-progress-card') || 
-        target.classList.contains('completed-card')) {
-        
-        // Insert dragged item before the target item
-        target.parentNode.insertBefore(dragged, target);
-    } else if (target.classList.contains('todo-grid') || 
-               target.classList.contains('in-progress-grid') || 
-               target.classList.contains('completed-grid')) {
-        
-        // Append the dragged item to the end if dropped on the grid
-        target.appendChild(dragged);
+    if (!toastShown) {
+        showToast(`Screen width: ${screenWidth}px`);
+        toastShown = true;
     }
 }
 
-document.getElementById('todo-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const input = document.querySelector('.todo-add-input');
-    const newTask = document.createElement('div');
-    newTask.className = 'todo-card';
-    newTask.draggable = true;
-    newTask.ondragstart = drag;
-    newTask.textContent = input.value;
-    document.getElementById('todo-grid').appendChild(newTask);
-    input.value = '';
+document.addEventListener('DOMContentLoaded', () => {
+    updateWidth();
+    window.addEventListener('resize', () => {
+        updateWidth();
+    });
 });
 
-// Adding event listeners for all existing task cards
-document.querySelectorAll('.todo-card, .in-progress-card, .completed-card').forEach(card => {
-    card.ondragstart = drag;
-});
+function setActiveLink(link, sectionId) {
+    const links = document.querySelectorAll('.todo-todos');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showSection(sectionId);
+}
+  
 
-  
-  
 </script>
 
   
