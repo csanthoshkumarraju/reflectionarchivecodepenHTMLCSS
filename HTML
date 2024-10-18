@@ -36,7 +36,7 @@
             <li><a href="#"><i class="fa-solid fa-bars fa-2xl"></i><span class="menu-text">Menu</span></a></li>
             <li><a href="#"><i class="fa-solid fa-chart-line"></i><span class="menu-text">Dashboard</span></a></li>
             <li><a href="#todos-section-nav-id"><i class="fa-solid fa-clipboard-check"></i><span class="menu-text">To Do</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-calendar-check"></i><span class="menu-text">Plans</span></a></li>
+            <li><a href="#plans-section-nav-id"><i class="fa-solid fa-calendar-check"></i><span class="menu-text">Plans</span></a></li>
             <li><a href="#"><i class="fa-solid fa-trophy"></i><span class="menu-text">Achievements</span></a></li>
             <li><a href="#"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i><span class="menu-text">Travelling</span></a></li>
             <li><a href="#"><i class="fa-solid fa-briefcase"></i><span class="menu-text">Experiences</span></a></li> 
@@ -161,6 +161,8 @@
 </div>
 
 
+
+
     <div class="todo-section" id="todo-section">
         <div class="todo-grid" id="todo-grid">
             <div class="todo-card">
@@ -171,7 +173,7 @@
             <button><i class="fa-solid fa-pen todo-btn" style="color: #d58400;"></i> </button> 
             <button><i class="fa-regular fa-hourglass-half todo-btn" style="color:                    #ff9300;"></i></button> 
             <button><i class="fa-solid fa-trash todo-btn" style="color: #ff2600;"></i></button>   </div>
-            Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.
+            Task 1
               </div>
             <div class="todo-card">
               <div class="todo-tags">
@@ -382,6 +384,278 @@
 <!-- ****************************************************************************************** -->
 
 
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Plans section Start ********************************** -->
+<!-- ****************************************************************************************** -->
+
+<section class="plans-section" id="plans-section-nav-id">
+    <h2 class="plans-section-heading">Plans</h2>
+    
+    <form id="plan-form">
+        <input type="text" class="plan-add-input" placeholder="Add a plan" required>
+        <button type="submit" class="plan-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="plans-progress-urls">
+    <a href="#plans-section-nav-id" class="plan-plans" onclick="setActivePlanLink(this, 'plans-section'); return false;">
+        <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> Plans
+    </a>
+    <a href="#plans-section-nav-id" class="plan-plans" onclick="setActivePlanLink(this, 'plans-in-progress-section'); return false;">
+        <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+    </a>
+    <a href="#plans-section-nav-id" class="plan-plans" onclick="setActivePlanLink(this, 'plans-completed-section'); return false;">
+        <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+    </a>
+</div>
+
+
+    <div class="plan-section" id="plans-section">
+        <div class="plan-grid" id="plan-grid">
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 1
+            </div>
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 2
+            </div>
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 3
+            </div>
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 4
+            </div>
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 5
+            </div>
+            <div class="plan-card">
+                <div class="plan-tags">
+                    <span class="plan-tag">Plan</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-pen plan-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half plan-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash plan-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Plan 6
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="in-progress-section" id="plans-in-progress-section" style="display: none;">
+        <div class="in-progress-grid" id="in-progress-grid">
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 7
+            </div>
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 8
+            </div>
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 9
+            </div>
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 10
+            </div>
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 11
+            </div>
+            <div class="in-progress-card">
+                <div class="plan-tags">
+                    <span class="plan-inp-tag">In Progress</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 12
+            </div>
+          <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <div class="completed-section" id="plans-completed-section" style="display: none;">
+        <div class="completed-grid" id="completed-grid">
+            <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 13
+            </div>
+            <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 14
+            </div>
+            <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 15
+            </div>
+          
+            <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 16
+            </div>
+          
+            <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 17
+            </div>
+          
+          <div class="completed-card">
+                <div class="plan-tags">
+                    <span class="plan-completed-tag">Completed</span>
+                </div>
+                <div class="plan-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Plan 18
+            </div>
+          <div class="pagination">
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="pagination-numbers">
+                <a href="#" class="pagination-number">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+            </span>
+            <a href="#" class="pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Plans section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+
 <script>
     const themeSwitch = document.getElementById('theme-switch');
     themeSwitch.addEventListener('change', () => {
@@ -392,6 +666,7 @@ document.getElementById("close-icon").addEventListener("click", function() {
     document.getElementById("notification").style.display = "none";
 });
   
+  
 function showSection(sectionId) {
     const sections = ['todo-section', 'in-progress-section', 'completed-section'];
     sections.forEach(section => {
@@ -400,7 +675,60 @@ function showSection(sectionId) {
     });
 }
 
+function setActiveLink(link, sectionId) {
+    const links = document.querySelectorAll('.todo-todos');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showSection(sectionId);
+}
 
+function showPlanSection(sectionId) {
+    const sections = ['plans-section', 'plans-in-progress-section', 'plans-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActivePlanLink(link, sectionId) {
+    const links = document.querySelectorAll('.plan-plans');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showPlanSection(sectionId);
+}
+
+  
+// function showSection(sectionId) {
+//     const sections = ['todo-section', 'in-progress-section', 'completed-section'];
+//     sections.forEach(section => {
+//         const element = document.getElementById(section);
+//         element.style.display = (section === sectionId) ? 'block' : 'none';
+//     });
+// }
+
+// function setActiveLink(link, sectionId) {
+//     const links = document.querySelectorAll('.todo-todos');
+//     links.forEach(l => l.classList.remove('active'));
+//     link.classList.add('active');
+//     showSection(sectionId);
+// }
+
+// function showSection(sectionId) {
+//     const sections = ['plans-section', 'plans-in-progress-section', 'plans-completed-section'];
+//     sections.forEach(section => {
+//         const element = document.getElementById(section);
+//         element.style.display = (section === sectionId) ? 'block' : 'none';
+//     });
+// }
+
+// function setActiveLink(link, sectionId) {
+//     const links = document.querySelectorAll('.plan-plans');
+//     links.forEach(l => l.classList.remove('active'));
+//     link.classList.add('active');
+//     showSection(sectionId);
+// }
+
+  
 let toastShown = false;
 
 function showToast(message) {
@@ -433,13 +761,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-function setActiveLink(link, sectionId) {
-    const links = document.querySelectorAll('.todo-todos');
-    links.forEach(l => l.classList.remove('active'));
-    link.classList.add('active');
-    showSection(sectionId);
-}
-  
 
 </script>
 
