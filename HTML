@@ -40,9 +40,9 @@
             <li><a href="#achievements-section-nav-id"><i class="fa-solid fa-trophy"></i><span class="menu-text">Achievements</span></a></li>
             <li><a href="#travellings-section-nav-id"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i><span class="menu-text">Travelling</span></a></li>
             <li><a href="#experiences-section-nav-id"><i class="fa-solid fa-briefcase"></i><span class="menu-text">Experiences</span></a></li> 
-            <li><a href="#"><i class="fa-regular fa-calendar-check"></i><span class="menu-text">Habits</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-sd-card"></i><span class="menu-text">Memories</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-bullseye"></i><span class="menu-text">Life Goals</span></a></li>
+            <li><a href="#habits-section-nav-id"><i class="fa-regular fa-calendar-check"></i><span class="menu-text">Habits</span></a></li>
+            <li><a href="#memories-section-nav-id"><i class="fa-solid fa-sd-card"></i><span class="menu-text">Memories</span></a></li>
+            <li><a href="#goals-section-nav-id"><i class="fa-solid fa-bullseye"></i><span class="menu-text">Life Goals</span></a></li>
             <li><a href="#"><i class="fas fa-flag"></i><span class="menu-text">Milestones</span></a></li>
            <li><a href="#"><i class="fa-solid fa-user-plus"></i><span class="menu-text">Register</span></a></li>
 <li><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i><span class="menu-text">Login</span></a></li>
@@ -1214,7 +1214,7 @@
   
     <div class="experience-progress-urls">
         <a href="#experiences-section-nav-id" class="experience-link" onclick="setActiveExperienceLink(this, 'experiences-section'); return false;">
-           <i class="fa-solid fa-briefcase"></i> Experiences
+           <i class="fa-solid fa-briefcase" style="color: #0433ff;"></i> Experiences
         </a>
         <a href="#experiences-section-nav-id" class="experience-link" onclick="setActiveExperienceLink(this, 'experiences-in-progress-section'); return false;">
           <i class="fa-solid fa-thumbs-up" style="color: #03C03C;"></i>   GOOD
@@ -1470,6 +1470,812 @@
 <!-- ****************************************************************************************** -->
 
 
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Habits section start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+<section class="habits-section" id="habits-section-nav-id">
+    <h2 class="habits-section-heading">Habits</h2>
+    
+    <form id="habit-form">
+        <input type="text" class="habit-add-input" placeholder="Add a habit" required>
+        <button type="submit" class="habit-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="habit-progress-urls">
+        <a href="#habits-section-nav-id" class="habit-link" onclick="setActiveHabitLink(this, 'habits-section'); return false;">
+            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> Habits
+        </a>
+        <a href="#habits-section-nav-id" class="habit-link" onclick="setActiveHabitLink(this, 'habits-in-progress-section'); return false;">
+            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+        </a>
+        <a href="#habits-section-nav-id" class="habit-link" onclick="setActiveHabitLink(this, 'habits-completed-section'); return false;">
+            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+        </a>
+    </div>
+
+    <div class="habit-section" id="habits-section">
+        <div class="habit-grid" id="habit-grid">
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 1
+            </div>
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 2
+            </div>
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 3
+            </div>
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 4
+            </div>
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 5
+            </div>
+            <div class="habit-card">
+                <div class="habit-tags">
+                    <span class="habit-tag">Habit</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-pen habit-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half habit-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash habit-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Habit 6
+            </div>
+        </div>
+        <div class="habit-pagination">
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="habit-pagination-numbers">
+                <a href="#" class="habit-pagination-number">1</a>
+                <a href="#" class="habit-pagination-number">2</a>
+                <a href="#" class="habit-pagination-number">3</a>
+            </span>
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="habits-in-progress-section" id="habits-in-progress-section" style="display: none;">
+        <div class="habits-in-progress-grid" id="habits-in-progress-grid">
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 7
+            </div>
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 8
+            </div>
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 9
+            </div>
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 10
+            </div>
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 11
+            </div>
+            <div class="habits-in-progress-card">
+                <div class="habit-tags">
+                    <span class="habit-inp-tag">In Progress</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 12
+            </div>
+        </div>
+        <div class="habit-pagination">
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="habit-pagination-numbers">
+                <a href="#" class="habit-pagination-number">1</a>
+                <a href="#" class="habit-pagination-number">2</a>
+                <a href="#" class="habit-pagination-number">3</a>
+            </span>
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="habits-completed-section" id="habits-completed-section" style="display: none;">
+        <div class="habits-completed-grid" id="habits-completed-grid">
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 13
+            </div>
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 14
+            </div>
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 15
+            </div>
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 16
+            </div>
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 17
+            </div>
+            <div class="habits-completed-card">
+                <div class="habit-tags">
+                    <span class="habit-completed-tag">Completed</span>
+                </div>
+                <div class="habit-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Habit 18
+            </div>
+        </div>
+        <div class="habit-pagination">
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="habit-pagination-numbers">
+                <a href="#" class="habit-pagination-number">1</a>
+                <a href="#" class="habit-pagination-number">2</a>
+                <a href="#" class="habit-pagination-number">3</a>
+            </span>
+            <a href="#" class="habit-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Habits section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Memories section start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+<section class="memories-section" id="memories-section-nav-id">
+    <h2 class="memories-section-heading">Memories</h2>
+    
+    <form id="memory-form">
+        <input type="text" class="memory-add-input" placeholder="Add a memory" required>
+        <button type="submit" class="memory-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="memory-progress-urls">
+        <a href="#memories-section-nav-id" class="memory-link" onclick="setActiveMemoryLink(this, 'memories-section'); return false;">
+           <i class="fa-solid fa-sd-card" style="color: #0433ff;"></i> Memories
+        </a>
+        <a href="#memories-section-nav-id" class="memory-link" onclick="setActiveMemoryLink(this, 'memories-in-progress-section'); return false;">
+          <i class="fa-solid fa-thumbs-up" style="color: #03C03C;"></i>   BEST
+        </a>
+        <a href="#memories-section-nav-id" class="memory-link" onclick="setActiveMemoryLink(this, 'memories-completed-section'); return false;">
+         <i class="fa-solid fa-thumbs-down" style="color: #FF0800;"></i>     WORST
+        </a>
+    </div>
+
+    <div class="memory-section" id="memories-section">
+        <div class="memory-grid" id="memory-grid">
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 1
+            </div>
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 2
+            </div>
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 3
+            </div>
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 4
+            </div>
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 5
+            </div>
+            <div class="memory-card">
+                <div class="memory-tags">
+                    <span class="memory-tag">Memory</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-pen memory-btn" style="color: #d58400;"></i></button> 
+                   <button><i class="fa-solid fa-thumbs-up memory-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down memory-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash memory-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Memory 6
+            </div>
+        </div>
+        <div class="memory-pagination">
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="memory-pagination-numbers">
+                <a href="#" class="memory-pagination-number">1</a>
+                <a href="#" class="memory-pagination-number">2</a>
+                <a href="#" class="memory-pagination-number">3</a>
+            </span>
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="memories-in-progress-section" id="memories-in-progress-section" style="display: none;">
+        <div class="memories-in-progress-grid" id="memories-in-progress-grid">
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 7
+            </div>
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 8
+            </div>
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 9
+            </div>
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 10
+            </div>
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 11
+            </div>
+            <div class="memories-in-progress-card">
+                <div class="memory-tags">
+                    <span class="memory-inp-tag">BEST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 12
+            </div>
+        </div>
+        <div class="memory-pagination">
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="memory-pagination-numbers">
+                <a href="#" class="memory-pagination-number">1</a>
+                <a href="#" class="memory-pagination-number">2</a>
+                <a href="#" class="memory-pagination-number">3</a>
+            </span>
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="memories-completed-section" id="memories-completed-section" style="display: none;">
+        <div class="memories-completed-grid" id="memories-completed-grid">
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 13
+            </div>
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 14
+            </div>
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 15
+            </div>
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 16
+            </div>
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 17
+            </div>
+            <div class="memories-completed-card">
+                <div class="memory-tags">
+                    <span class="memory-completed-tag">WORST</span>
+                </div>
+                <div class="memory-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Memory 18
+            </div>
+        </div>
+        <div class="memory-pagination">
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="memory-pagination-numbers">
+                <a href="#" class="memory-pagination-number">1</a>
+                <a href="#" class="memory-pagination-number">2</a>
+                <a href="#" class="memory-pagination-number">3</a>
+            </span>
+            <a href="#" class="memory-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Memories section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Goals section Start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+<section class="goals-section" id="goals-section-nav-id">
+    <h2 class="goals-section-heading">Goals</h2>
+    
+    <form id="goal-form">
+        <input type="text" class="goal-add-input" placeholder="Add a goal" required>
+        <button type="submit" class="goal-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="goal-progress-urls">
+        <a href="#goals-section-nav-id" class="goal-link" onclick="setActiveGoalLink(this, 'goals-section'); return false;">
+            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> Goals
+        </a>
+        <a href="#goals-section-nav-id" class="goal-link" onclick="setActiveGoalLink(this, 'goals-in-progress-section'); return false;">
+            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+        </a>
+        <a href="#goals-section-nav-id" class="goal-link" onclick="setActiveGoalLink(this, 'goals-completed-section'); return false;">
+            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+        </a>
+    </div>
+
+    <div class="goal-section" id="goals-section">
+        <div class="goal-grid" id="goal-grid">
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 1
+            </div>
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 2
+            </div>
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 3
+            </div>
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 4
+            </div>
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 5
+            </div>
+            <div class="goal-card">
+                <div class="goal-tags">
+                    <span class="goal-tag">Goal</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-pen goal-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half goal-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash goal-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Goal 6
+            </div>
+        </div>
+        <div class="goal-pagination">
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="goal-pagination-numbers">
+                <a href="#" class="goal-pagination-number">1</a>
+                <a href="#" class="goal-pagination-number">2</a>
+                <a href="#" class="goal-pagination-number">3</a>
+            </span>
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="goals-in-progress-section" id="goals-in-progress-section" style="display: none;">
+        <div class="goals-in-progress-grid" id="goals-in-progress-grid">
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 7
+            </div>
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 8
+            </div>
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 9
+            </div>
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 10
+            </div>
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 11
+            </div>
+            <div class="goals-in-progress-card">
+                <div class="goal-tags">
+                    <span class="goal-inp-tag">In Progress</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 12
+            </div>
+        </div>
+        <div class="goal-pagination">
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="goal-pagination-numbers">
+                <a href="#" class="goal-pagination-number">1</a>
+                <a href="#" class="goal-pagination-number">2</a>
+                <a href="#" class="goal-pagination-number">3</a>
+            </span>
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="goals-completed-section" id="goals-completed-section" style="display: none;">
+        <div class="goals-completed-grid" id="goals-completed-grid">
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 13
+            </div>
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 14
+            </div>
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 15
+            </div>
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 16
+            </div>
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 17
+            </div>
+            <div class="goals-completed-card">
+                <div class="goal-tags">
+                    <span class="goal-completed-tag">Completed</span>
+                </div>
+                <div class="goal-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Goal 18
+            </div>
+        </div>
+        <div class="goal-pagination">
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="goal-pagination-numbers">
+                <a href="#" class="goal-pagination-number">1</a>
+                <a href="#" class="goal-pagination-number">2</a>
+                <a href="#" class="goal-pagination-number">3</a>
+            </span>
+            <a href="#" class="goal-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Goals section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+
 <script>
     const themeSwitch = document.getElementById('theme-switch');
     themeSwitch.addEventListener('change', () => {
@@ -1560,6 +2366,53 @@ function setActiveExperienceLink(link, sectionId) {
 }
 
   
+function showHabitSection(sectionId) {
+    const sections = ['habits-section', 'habits-in-progress-section', 'habits-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActiveHabitLink(link, sectionId) {
+    const links = document.querySelectorAll('.habit-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showHabitSection(sectionId);
+}
+  
+
+function showMemorySection(sectionId) {
+    const sections = ['memories-section', 'memories-in-progress-section', 'memories-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActiveMemoryLink(link, sectionId) {
+    const links = document.querySelectorAll('.memory-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showMemorySection(sectionId);
+}
+  
+function showGoalSection(sectionId) {
+    const sections = ['goals-section', 'goals-in-progress-section', 'goals-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActiveGoalLink(link, sectionId) {
+    const links = document.querySelectorAll('.goal-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showGoalSection(sectionId);
+}
+
+
   
 let toastShown = false;
 
