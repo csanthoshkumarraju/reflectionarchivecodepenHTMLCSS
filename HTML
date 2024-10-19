@@ -37,7 +37,7 @@
             <li><a href="#"><i class="fa-solid fa-chart-line"></i><span class="menu-text">Dashboard</span></a></li>
             <li><a href="#todos-section-nav-id"><i class="fa-solid fa-clipboard-check"></i><span class="menu-text">To Do</span></a></li>
             <li><a href="#plans-section-nav-id"><i class="fa-solid fa-calendar-check"></i><span class="menu-text">Plans</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-trophy"></i><span class="menu-text">Achievements</span></a></li>
+            <li><a href="#achievements-section-nav-id"><i class="fa-solid fa-trophy"></i><span class="menu-text">Achievements</span></a></li>
             <li><a href="#"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i><span class="menu-text">Travelling</span></a></li>
             <li><a href="#"><i class="fa-solid fa-briefcase"></i><span class="menu-text">Experiences</span></a></li> 
             <li><a href="#"><i class="fa-regular fa-calendar-check"></i><span class="menu-text">Habits</span></a></li>
@@ -481,16 +481,16 @@
                 Plan 6
             </div>
         </div>
-        <div class="pagination">
-            <a href="#" class="pagination-button">
+        <div class="plan-pagination">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-left"></i>
             </a>
-            <span class="pagination-numbers">
-                <a href="#" class="pagination-number">1</a>
-                <a href="#" class="pagination-number">2</a>
-                <a href="#" class="pagination-number">3</a>
+            <span class="plan-pagination-numbers">
+                <a href="#" class="plan-pagination-number">1</a>
+                <a href="#" class="plan-pagination-number">2</a>
+                <a href="#" class="plan-pagination-number">3</a>
             </span>
-            <a href="#" class="pagination-button">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-right"></i>
             </a>
         </div>
@@ -558,19 +558,21 @@
                 </div> 
                 Plan 12
             </div>
-          <div class="pagination">
-            <a href="#" class="pagination-button">
+          
+          <div class="plan-pagination">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-left"></i>
             </a>
-            <span class="pagination-numbers">
-                <a href="#" class="pagination-number">1</a>
-                <a href="#" class="pagination-number">2</a>
-                <a href="#" class="pagination-number">3</a>
+            <span class="plan-pagination-numbers">
+                <a href="#" class="plan-pagination-number">1</a>
+                <a href="#" class="plan-pagination-number">2</a>
+                <a href="#" class="plan-pagination-number">3</a>
             </span>
-            <a href="#" class="pagination-button">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-right"></i>
             </a>
         </div>
+          
         </div>
     </div>
 
@@ -633,19 +635,21 @@
                 </div> 
                 Plan 18
             </div>
-          <div class="pagination">
-            <a href="#" class="pagination-button">
+          
+          <div class="plan-pagination">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-left"></i>
             </a>
-            <span class="pagination-numbers">
-                <a href="#" class="pagination-number">1</a>
-                <a href="#" class="pagination-number">2</a>
-                <a href="#" class="pagination-number">3</a>
+            <span class="plan-pagination-numbers">
+                <a href="#" class="plan-pagination-number">1</a>
+                <a href="#" class="plan-pagination-number">2</a>
+                <a href="#" class="plan-pagination-number">3</a>
             </span>
-            <a href="#" class="pagination-button">
+            <a href="#" class="plan-pagination-button">
                 <i class="fa-solid fa-caret-right"></i>
             </a>
         </div>
+          
         </div>
     </div>
 </section>
@@ -654,6 +658,275 @@
 <!-- *********************************** Plans section End ************************************ -->
 <!-- ****************************************************************************************** -->
 
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Achievements section Start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+<section class="achievements-section" id="achievements-section-nav-id">
+    <h2 class="achievements-section-heading">Achievements</h2>
+    
+    <form id="achievement-form">
+        <input type="text" class="achievement-add-input" placeholder="Add an achievement" required>
+        <button type="submit" class="achievement-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="achievement-progress-urls">
+        <a href="#achievements-section-nav-id" class="achievement-link" onclick="setActiveAchievementLink(this, 'achievements-section'); return false;">
+            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> Achievements
+        </a>
+        <a href="#achievements-section-nav-id" class="achievement-link" onclick="setActiveAchievementLink(this, 'achievements-in-progress-section'); return false;">
+            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+        </a>
+        <a href="#achievements-section-nav-id" class="achievement-link" onclick="setActiveAchievementLink(this, 'achievements-completed-section'); return false;">
+            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+        </a>
+    </div>
+
+    <div class="achievement-section" id="achievements-section">
+        <div class="achievement-grid" id="achievement-grid">
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 1
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 2
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 3
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 4
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 5
+            </div>
+            <div class="achievement-card">
+                <div class="achievement-tags">
+                    <span class="achievement-tag">Achievement</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-pen achievement-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half achievement-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash achievement-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Achievement 6
+            </div>
+        </div>
+        <div class="achievement-pagination">
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="achievement-pagination-numbers">
+                <a href="#" class="achievement-pagination-number">1</a>
+                <a href="#" class="achievement-pagination-number">2</a>
+                <a href="#" class="achievement-pagination-number">3</a>
+            </span>
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="achievements-in-progress-section" id="achievements-in-progress-section" style="display: none;">
+        <div class="achievements-in-progress-grid" id="achievements-in-progress-grid">
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 7
+            </div>
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 8
+            </div>
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 9
+            </div>
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 10
+            </div>
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 11
+            </div>
+            <div class="achievements-in-progress-card">
+                <div class="achievement-tags">
+                    <span class="achievement-inp-tag">In Progress</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 12
+            </div>
+        </div>
+      <div class="achievement-pagination">
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="achievement-pagination-numbers">
+                <a href="#" class="achievement-pagination-number">1</a>
+                <a href="#" class="achievement-pagination-number">2</a>
+                <a href="#" class="achievement-pagination-number">3</a>
+            </span>
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="achievements-completed-section" id="achievements-completed-section" style="display: none;">
+        <div class="achievements-completed-grid" id="achievements-completed-grid">
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 13
+            </div>
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 14
+            </div>
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 15
+            </div>
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 16
+            </div>
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 17
+            </div>
+            <div class="achievements-completed-card">
+                <div class="achievement-tags">
+                    <span class="achievement-completed-tag">Completed</span>
+                </div>
+                <div class="achievement-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Achievement 18
+            </div>
+        </div>
+        <div class="achievement-pagination">
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="achievement-pagination-numbers">
+                <a href="#" class="achievement-pagination-number">1</a>
+                <a href="#" class="achievement-pagination-number">2</a>
+                <a href="#" class="achievement-pagination-number">3</a>
+            </span>
+            <a href="#" class="achievement-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Achievements section End ************************************ -->
+<!-- ****************************************************************************************** -->
 
 
 <script>
@@ -698,35 +971,23 @@ function setActivePlanLink(link, sectionId) {
 }
 
   
-// function showSection(sectionId) {
-//     const sections = ['todo-section', 'in-progress-section', 'completed-section'];
-//     sections.forEach(section => {
-//         const element = document.getElementById(section);
-//         element.style.display = (section === sectionId) ? 'block' : 'none';
-//     });
-// }
+function showAchievementSection(sectionId) {
+    const sections = ['achievements-section', 'achievements-in-progress-section', 'achievements-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
 
-// function setActiveLink(link, sectionId) {
-//     const links = document.querySelectorAll('.todo-todos');
-//     links.forEach(l => l.classList.remove('active'));
-//     link.classList.add('active');
-//     showSection(sectionId);
-// }
+function setActiveAchievementLink(link, sectionId) {
+    const links = document.querySelectorAll('.achievement-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showAchievementSection(sectionId);
+}
 
-// function showSection(sectionId) {
-//     const sections = ['plans-section', 'plans-in-progress-section', 'plans-completed-section'];
-//     sections.forEach(section => {
-//         const element = document.getElementById(section);
-//         element.style.display = (section === sectionId) ? 'block' : 'none';
-//     });
-// }
-
-// function setActiveLink(link, sectionId) {
-//     const links = document.querySelectorAll('.plan-plans');
-//     links.forEach(l => l.classList.remove('active'));
-//     link.classList.add('active');
-//     showSection(sectionId);
-// }
+  
+  
 
   
 let toastShown = false;
