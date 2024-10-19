@@ -38,8 +38,8 @@
             <li><a href="#todos-section-nav-id"><i class="fa-solid fa-clipboard-check"></i><span class="menu-text">To Do</span></a></li>
             <li><a href="#plans-section-nav-id"><i class="fa-solid fa-calendar-check"></i><span class="menu-text">Plans</span></a></li>
             <li><a href="#achievements-section-nav-id"><i class="fa-solid fa-trophy"></i><span class="menu-text">Achievements</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i><span class="menu-text">Travelling</span></a></li>
-            <li><a href="#"><i class="fa-solid fa-briefcase"></i><span class="menu-text">Experiences</span></a></li> 
+            <li><a href="#travellings-section-nav-id"><i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: 330deg;"></i><span class="menu-text">Travelling</span></a></li>
+            <li><a href="#experiences-section-nav-id"><i class="fa-solid fa-briefcase"></i><span class="menu-text">Experiences</span></a></li> 
             <li><a href="#"><i class="fa-regular fa-calendar-check"></i><span class="menu-text">Habits</span></a></li>
             <li><a href="#"><i class="fa-solid fa-sd-card"></i><span class="menu-text">Memories</span></a></li>
             <li><a href="#"><i class="fa-solid fa-bullseye"></i><span class="menu-text">Life Goals</span></a></li>
@@ -929,6 +929,547 @@
 <!-- ****************************************************************************************** -->
 
 
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Travelling section Start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+<section class="travellings-section" id="travellings-section-nav-id">
+    <h2 class="travellings-section-heading">Travellings</h2>
+    
+    <form id="travelling-form">
+        <input type="text" class="travelling-add-input" placeholder="Add a travelling" required>
+        <button type="submit" class="travelling-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="travelling-progress-urls">
+        <a href="#travellings-section-nav-id" class="travelling-link" onclick="setActiveTravellingLink(this, 'travellings-section'); return false;">
+            <i class="fa-solid fa-table-list" style="color: #0433ff;"></i> Travellings
+        </a>
+        <a href="#travellings-section-nav-id" class="travelling-link" onclick="setActiveTravellingLink(this, 'travellings-in-progress-section'); return false;">
+            <i class="fa-regular fa-hourglass-half" style="color: #ff9300;"></i> In Progress
+        </a>
+        <a href="#travellings-section-nav-id" class="travelling-link" onclick="setActiveTravellingLink(this, 'travellings-completed-section'); return false;">
+            <i class="fa-solid fa-circle-check" style="color: #00f900;"></i> Completed
+        </a>
+    </div>
+
+    <div class="travelling-section" id="travellings-section">
+        <div class="travelling-grid" id="travelling-grid">
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 1
+            </div>
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 2
+            </div>
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 3
+            </div>
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 4
+            </div>
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 5
+            </div>
+            <div class="travelling-card">
+                <div class="travelling-tags">
+                    <span class="travelling-tag">Travelling</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-pen travelling-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-regular fa-hourglass-half travelling-btn" style="color: #ff9300;"></i></button> 
+                    <button><i class="fa-solid fa-trash travelling-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Travelling 6
+            </div>
+        </div>
+        <div class="travelling-pagination">
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="travelling-pagination-numbers">
+                <a href="#" class="travelling-pagination-number">1</a>
+                <a href="#" class="travelling-pagination-number">2</a>
+                <a href="#" class="travelling-pagination-number">3</a>
+            </span>
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="travellings-in-progress-section" id="travellings-in-progress-section" style="display: none;">
+        <div class="travellings-in-progress-grid" id="travellings-in-progress-grid">
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 7
+            </div>
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 8
+            </div>
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 9
+            </div>
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 10
+            </div>
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 11
+            </div>
+            <div class="travellings-in-progress-card">
+                <div class="travelling-tags">
+                    <span class="travelling-inp-tag">In Progress</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-circle-check" style="color: #00f900;"></i></button>
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 12
+            </div>
+        </div>
+        <div class="travelling-pagination">
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="travelling-pagination-numbers">
+                <a href="#" class="travelling-pagination-number">1</a>
+                <a href="#" class="travelling-pagination-number">2</a>
+                <a href="#" class="travelling-pagination-number">3</a>
+            </span>
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="travellings-completed-section" id="travellings-completed-section" style="display: none;">
+        <div class="travellings-completed-grid" id="travellings-completed-grid">
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 13
+            </div>
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 14
+            </div>
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 15
+            </div>
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 16
+            </div>
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 17
+            </div>
+            <div class="travellings-completed-card">
+                <div class="travelling-tags">
+                    <span class="travelling-completed-tag">Completed</span>
+                </div>
+                <div class="travelling-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Travelling 18
+            </div>
+        </div>
+        <div class="travelling-pagination">
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="travelling-pagination-numbers">
+                <a href="#" class="travelling-pagination-number">1</a>
+                <a href="#" class="travelling-pagination-number">2</a>
+                <a href="#" class="travelling-pagination-number">3</a>
+            </span>
+            <a href="#" class="travelling-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Travelling section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Expereince section Start ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
+<section class="experiences-section" id="experiences-section-nav-id">
+    <h2 class="experiences-section-heading">Experiences</h2>
+    
+    <form id="experience-form">
+        <input type="text" class="experience-add-input" placeholder="Add an experience" required>
+        <button type="submit" class="experience-add-button">
+            <i class="fa-solid fa-plus fa-lg"></i> Add
+        </button>
+    </form>
+  
+    <div class="experience-progress-urls">
+        <a href="#experiences-section-nav-id" class="experience-link" onclick="setActiveExperienceLink(this, 'experiences-section'); return false;">
+           <i class="fa-solid fa-briefcase"></i> Experiences
+        </a>
+        <a href="#experiences-section-nav-id" class="experience-link" onclick="setActiveExperienceLink(this, 'experiences-in-progress-section'); return false;">
+          <i class="fa-solid fa-thumbs-up" style="color: #03C03C;"></i>   GOOD
+        </a>
+        <a href="#experiences-section-nav-id" class="experience-link" onclick="setActiveExperienceLink(this, 'experiences-completed-section'); return false;">
+         <i class="fa-solid fa-thumbs-down" style="color: #FF0800;"></i>     BAD
+        </a>
+    </div>
+
+    <div class="experience-section" id="experiences-section">
+        <div class="experience-grid" id="experience-grid">
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 1
+            </div>
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 2
+            </div>
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 3
+            </div>
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 4
+            </div>
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                    <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 5
+            </div>
+            <div class="experience-card">
+                <div class="experience-tags">
+                    <span class="experience-tag">Experience</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-pen experience-btn" style="color: #d58400;"></i></button> 
+                   <button><i class="fa-solid fa-thumbs-up experience-btn" style="color: #03C03C;"></i></button>
+                   <button><i class="fa-solid fa-thumbs-down experience-btn" style="color: #FF0800;"></i></button>
+                    <button><i class="fa-solid fa-trash experience-btn" style="color: #ff2600;"></i></button>   
+                </div>
+                Experience 6
+            </div>
+        </div>
+        <div class="experience-pagination">
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="experience-pagination-numbers">
+                <a href="#" class="experience-pagination-number">1</a>
+                <a href="#" class="experience-pagination-number">2</a>
+                <a href="#" class="experience-pagination-number">3</a>
+            </span>
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="experiences-in-progress-section" id="experiences-in-progress-section" style="display: none;">
+        <div class="experiences-in-progress-grid" id="experiences-in-progress-grid">
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 7
+            </div>
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 8
+            </div>
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 9
+            </div>
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 10
+            </div>
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 11
+            </div>
+            <div class="experiences-in-progress-card">
+                <div class="experience-tags">
+                    <span class="experience-inp-tag">GOOD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 12
+            </div>
+        </div>
+        <div class="experience-pagination">
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="experience-pagination-numbers">
+                <a href="#" class="experience-pagination-number">1</a>
+                <a href="#" class="experience-pagination-number">2</a>
+                <a href="#" class="experience-pagination-number">3</a>
+            </span>
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="experiences-completed-section" id="experiences-completed-section" style="display: none;">
+        <div class="experiences-completed-grid" id="experiences-completed-grid">
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 13
+            </div>
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 14
+            </div>
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 15
+            </div>
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 16
+            </div>
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 17
+            </div>
+            <div class="experiences-completed-card">
+                <div class="experience-tags">
+                    <span class="experience-completed-tag">BAD</span>
+                </div>
+                <div class="experience-action-buttons">
+                    <button><i class="fa-solid fa-trash" style="color: #ff2600;"></i></button>
+                </div> 
+                Experience 18
+            </div>
+        </div>
+        <div class="experience-pagination">
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-left"></i>
+            </a>
+            <span class="experience-pagination-numbers">
+                <a href="#" class="experience-pagination-number">1</a>
+                <a href="#" class="experience-pagination-number">2</a>
+                <a href="#" class="experience-pagination-number">3</a>
+            </span>
+            <a href="#" class="experience-pagination-button">
+                <i class="fa-solid fa-caret-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ****************************************************************************************** -->
+<!-- *********************************** Expereince section End ************************************ -->
+<!-- ****************************************************************************************** -->
+
+
 <script>
     const themeSwitch = document.getElementById('theme-switch');
     themeSwitch.addEventListener('change', () => {
@@ -987,8 +1528,38 @@ function setActiveAchievementLink(link, sectionId) {
 }
 
   
+function showTravellingSection(sectionId) {
+    const sections = ['travellings-section', 'travellings-in-progress-section', 'travellings-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActiveTravellingLink(link, sectionId) {
+    const links = document.querySelectorAll('.travelling-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showTravellingSection(sectionId);
+}
   
 
+function showExperienceSection(sectionId) {
+    const sections = ['experiences-section', 'experiences-in-progress-section', 'experiences-completed-section'];
+    sections.forEach(section => {
+        const element = document.getElementById(section);
+        element.style.display = (section === sectionId) ? 'block' : 'none';
+    });
+}
+
+function setActiveExperienceLink(link, sectionId) {
+    const links = document.querySelectorAll('.experience-link');
+    links.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+    showExperienceSection(sectionId);
+}
+
+  
   
 let toastShown = false;
 
