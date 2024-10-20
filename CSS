@@ -2831,3 +2831,319 @@ input[type="checkbox"]:checked + .toggle-label .toggle-slider::before {
 /* ****************************************************************************************** */
 /* ********************************* Milestones section end ********************************* */
 /* ****************************************************************************************** */
+
+
+/* ****************************************************************************************** */
+/* ********************************* Register section start ********************************* */
+/* ****************************************************************************************** */
+
+.Register-section {
+    margin-left: 110px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.Register-section-heading {
+    text-align: center;
+    color: var(--color-primary-a20);
+}
+
+
+.register-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    max-width: 400px;
+    margin:0 auto;
+}
+
+.register-label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.register-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primary-a20);
+    color: white;
+    border: 1.5px solid #FF21F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #4d4dff;
+    border: 1.5px solid #FF21F2;
+    box-shadow: 0 0 5px 1px #FF21F2;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-anchor {
+    color: var(--color-primary-a20);
+    text-decoration: none;
+}
+
+.register-anchor:hover {
+    text-decoration: underline;
+}
+
+
+/*  */
+
+.dark-theme .register-form {
+    background-color: var(--color-surface-a10);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 12px; 
+    width: 80%;
+    max-width: 400px;
+    margin:0 auto;
+    color: white;
+}
+
+.dark-theme .register-input{
+    background-color: var(--color-surface-a10);
+    color: white;
+    border: 1px solid var(--color-primary-a20);
+    box-shadow: 0 3px 6px rgba(107, 84, 229, 0.5), 0 -2px 4px rgba(107, 84, 229, 0.5);
+}
+
+.dark-theme .register-button {
+    border: 1px solid #FF5F1F;
+}
+
+.dark-theme .register-button:hover {
+      box-shadow: 0 0 5px 1px #FF5F1F;
+}
+
+/*  */
+
+/* ****************************************************************************************** */
+/* ********************************* Register section end ********************************* */
+/* ****************************************************************************************** */
+
+/* ****************************************************************************************** */
+/* ********************************* Login section start ********************************* */
+/* ****************************************************************************************** */
+
+.Login-section {
+    margin-left: 110px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.Login-section-heading {
+    text-align: center;
+    color: var(--color-primary-a20);
+}
+
+.login-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primary-a20);
+    color: white;
+    border: 1.5px solid #FF21F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #4d4dff;
+    border: 1.5px solid #FF21F2;
+    box-shadow: 0 0 5px 1px #FF21F2;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-anchor {
+    color: var(--color-primary-a20);
+    text-decoration: none;
+}
+
+.login-anchor:hover {
+    text-decoration: underline;
+}
+
+.forgot-password-link {
+    text-align: center;
+}
+
+.forgot-password-anchor {
+    color: var(--color-primary-a20);
+    text-decoration: none;
+}
+
+.forgot-password-anchor:hover {
+    text-decoration: underline;
+}
+
+.dark-theme .login-form {
+    background-color: var(--color-surface-a10);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 12px; 
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.dark-theme .login-input {
+    background-color: var(--color-surface-a10);
+    color: white;
+    border: 1px solid var(--color-primary-a20);
+    box-shadow: 0 3px 6px rgba(107, 84, 229, 0.5), 0 -2px 4px rgba(107, 84, 229, 0.5);
+}
+
+.dark-theme .login-button {
+    border: 1px solid #FF5F1F;
+}
+
+.dark-theme .login-button:hover {
+    box-shadow: 0 0 5px 1px #FF5F1F;
+}
+
+
+/* ****************************************************************************************** */
+/* ********************************* Login section end ********************************* */
+/* ****************************************************************************************** */
+
+/* ****************************************************************************************** */
+/* ********************************* Reset PWD section start ********************************* */
+/* ****************************************************************************************** */
+
+.Reset-password-section {
+    margin-left: 110px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.Reset-password-section-heading {
+    text-align: center;
+    color: var(--color-primary-a20);
+}
+
+.reset-password-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.reset-password-label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.reset-password-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reset-password-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-primary-a20);
+    color: white;
+    border: 1.5px solid #FF21F2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-password-button:hover {
+    background-color: #4d4dff;
+    border: 1.5px solid #FF21F2;
+    box-shadow: 0 0 5px 1px #FF21F2;
+}
+
+.reset-password-link {
+    text-align: center;
+}
+
+.reset-password-anchor {
+    color: var(--color-primary-a20);
+    text-decoration: none;
+}
+
+.reset-password-anchor:hover {
+    text-decoration: underline;
+}
+
+.dark-theme .reset-password-form {
+    background-color: var(--color-surface-a10);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 3px 12px; 
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.dark-theme .reset-password-input {
+    background-color: var(--color-surface-a10);
+    color: white;
+    border: 1px solid var(--color-primary-a20);
+    box-shadow: 0 3px 6px rgba(107, 84, 229, 0.5), 0 -2px 4px rgba(107, 84, 229, 0.5);
+}
+
+.dark-theme .reset-password-button {
+    border: 1px solid #FF5F1F;
+}
+
+.dark-theme .reset-password-button:hover {
+    box-shadow: 0 0 5px 1px #FF5F1F;
+}
+
+
+/* ****************************************************************************************** */
+/* ********************************* Reset PWD section end ********************************* */
+/* ****************************************************************************************** */
